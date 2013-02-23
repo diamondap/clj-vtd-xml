@@ -14,6 +14,14 @@ to spare you the learning curve and to make common operations easy.
 Although VTD can be used to alter and write XML documents, this library focuses
 only on parsing and reading XML.
 
+## Building and Testing
+
+<pre>
+$ lein deps
+$ lein test
+$ lein jar
+</pre>
+
 ## Usage
 
 For examples of how to use this library, please see the tests in
