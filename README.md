@@ -30,6 +30,8 @@ clj-vtd-xml/test/clj_vtd_xml/test/core.clj, which are heavily commented.
 Here's a simple example that extracts text from a document that contains no
 namespaces.
 
+```clojure
+
     (ns my-parser
         (:use [clj-vtd-xml.core]))
 
@@ -60,8 +62,12 @@ namespaces.
     (defn get-address-hashes []
         (get-hash nav "//Address"))
 
+```
+
 To parse an XML document with namespace support, you must create the initial
 navigator object with the last param set to true:
+
+```clojure
 
     ;; Create the navigator with namespace support (last param = true).
     (def nav-ns (navigator xml true))
@@ -85,6 +91,8 @@ navigator object with the last param set to true:
     (defn get-address-hashes []
         (get-hash nav-ns "//Address" ns-hash))
 
+```
+
 In addition to these XPATH functions, the library also exposes the standard
 VTD navigation methods for moving to parent, child, and sibling elements.
 Note that those functions affect the internal state of the VTDNav object.
@@ -96,10 +104,14 @@ all of the address elements within a document that have the attribute
 Type = 'Residence', and then extract the city name from each of those elements,
 you can do this:
 
+```clojure
+
     (defn get-cities-of-residence []
         (let [residence-addresses
               (find-indexes nav "//Address[@Type = 'Residence']")]
             (map #(first-match % "City") residence-addresses)))
+
+```
 
 Of course, you could do that with a single XPATH expression, but the code
 above illustrates how you would go about isolating individual elements to
@@ -125,7 +137,7 @@ See the tests for examples and additional details.
 
 To avoid this exception:
 
-> com.ximpleware.XPathParseException: No URL found for prefix:xyz
+&gt; com.ximpleware.XPathParseException: No URL found for prefix:xyz
 
 Be sure to create the initial navigator object with namespace support (that is,
 with the last param set to true), and to pass in the namespace hash as the
@@ -178,12 +190,16 @@ actually get the index of the element that contains that attribute. For
 example, using the sample.xml document in the test directory, the following
 function prints 237 for both pos1 and pos2:
 
+```clojure
+
     (let [nav1 (first (find-indexes nav "//Employee[position() = 1]"))
           nav2 (first (find-indexes nav "//Employee[position() = 1]/@role"))
           pos1 (position nav1)
           pos2 (position nav2)]
       (println (str "nav1 points to offset " (:offset pos1)))
       (println (str "nav2 points to offset " (:offset pos2))))
+
+```
 
 You don't need to worry about this when you call first-match or all-matches.
 Those functions will yield the text you expect.
