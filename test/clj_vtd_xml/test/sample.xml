@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Directory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Organizations>
+    <Organization name="US House of Representatives" type="Legislative">
+	  <Location>US Capitol</Location>
+      <Employee role="Elected Member">
+        <Name>John Boehner</Name>
+      </Employee>
+      <Employee role="Elected Member">
+        <Name>Nancy Pelosi</Name>
+      </Employee>
+      <Employee role="Staff">
+        <Name>Willie Williams</Name>
+      </Employee>
+	  <ApprovalRating>Low</ApprovalRating>
+    </Organization>
+    <Organization name="US Senate" type="Legislative">
+	  <Location>US Capitol</Location>
+      <Employee role="Elected Member">
+        <Name>John McCain</Name>
+      </Employee>
+      <Employee role="Elected Member">
+        <Name>Max Baucus</Name>
+      </Employee>
+      <Employee role="Staff">
+        <Name>Cassandra Hadoop</Name>
+      </Employee>
+	  <ApprovalRating>Low</ApprovalRating>
+    </Organization>
+    <Organization name="US Supreme Court" type="Judicial">
+	  <Location>US Supreme Court Building</Location>
+      <Employee role="Justice">
+        <Name>Sonia Sotomayor</Name>
+      </Employee>
+      <Employee role="Justice">
+        <Name>Samual Alito</Name>
+      </Employee>
+      <Employee role="Clerk">
+        <Name>Bill Murray</Name>
+      </Employee>
+	  <ApprovalRating>Medium</ApprovalRating>
+    </Organization>
+    <Organization name="US President" type="Executive">
+	  <Location>The White House</Location>
+      <Employee role="President">
+        <Name>Barack Obama</Name>
+      </Employee>
+      <Employee role="Chief of Staff">
+        <Name>William Daley</Name>
+      </Employee>
+      <Employee role="Press Secretary">
+        <Name>Lady Gaga</Name>
+      </Employee>
+	  <ApprovalRating>Low</ApprovalRating>
+    </Organization>
+  </Organizations>
+</Directory>

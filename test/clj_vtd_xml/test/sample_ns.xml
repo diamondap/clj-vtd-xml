@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Directory
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:ns1="http://www.skeema.kom/ns1"
+xmlns:ns2="http://www.skeema.kom/ns2">
+  <ns1:Organizations>
+    <ns1:Organization name="US House of Representatives" type="Legislative">
+	  <ns1:Location>US Capitol</ns1:Location>
+      <ns2:Employee role="Elected Member">
+        <Name>John Boehner</Name>
+      </ns2:Employee>
+      <ns2:Employee role="Elected Member">
+        <Name>Nancy Pelosi</Name>
+      </ns2:Employee>
+      <ns2:Employee role="Staff">
+        <Name>Willie Williams</Name>
+      </ns2:Employee>
+	  <ns2:ApprovalRating>Low</ns2:ApprovalRating>
+    </ns1:Organization>
+    <ns1:Organization name="US Senate" type="Legislative">
+	  <ns1:Location>US Capitol</ns1:Location>
+      <ns2:Employee role="Elected Member">
+        <Name>John McCain</Name>
+      </ns2:Employee>
+      <ns2:Employee role="Elected Member">
+        <Name>Max Baucus</Name>
+      </ns2:Employee>
+      <ns2:Employee role="Staff">
+        <Name>Cassandra Hadoop</Name>
+      </ns2:Employee>
+	  <ns2:ApprovalRating>Low</ns2:ApprovalRating>
+    </ns1:Organization>
+    <ns1:Organization name="US Supreme Court" type="Judicial">
+	  <ns1:Location>US Supreme Court Building</ns1:Location>
+      <ns2:Employee role="Justice">
+        <Name>Sonia Sotomayor</Name>
+      </ns2:Employee>
+      <ns2:Employee role="Elected Member">
+        <Name>Samual Alito</Name>
+      </ns2:Employee>
+      <ns2:Employee role="Clerk">
+        <Name>Bill Murray</Name>
+      </ns2:Employee>
+	  <ns2:ApprovalRating>Medium</ns2:ApprovalRating>
+    </ns1:Organization>
+    <ns1:Organization name="US President" type="Executive">
+	  <ns1:Location>The White House</ns1:Location>
+      <ns2:Employee role="President">
+        <Name>Barack Obama</Name>
+      </ns2:Employee>
+      <ns2:Employee role="Chief of Staff">
+        <Name>William Daley</Name>
+      </ns2:Employee>
+      <ns2:Employee role="Press Secretary">
+        <Name>Lady Gaga</Name>
+      </ns2:Employee>
+	  <ns2:ApprovalRating>Low</ns2:ApprovalRating>
+    </ns1:Organization>
+  </ns1:Organizations>
+</Directory>
