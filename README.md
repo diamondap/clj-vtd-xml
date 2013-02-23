@@ -207,7 +207,7 @@ Those functions will yield the text you expect.
 But if you're digging down into the innards of the VTD parser, it may save
 you some confusion to know that it indexes only elements.
 
-## License
+## MIT License
 
 Copyright (c) 2013 A. Diamond
 
