@@ -14,15 +14,12 @@ to spare you the learning curve and to make common operations easy.
 Although VTD can be used to alter and write XML documents, this library focuses
 only on parsing and reading XML.
 
-## Building and Testing
-
-<pre>
-$ lein deps
-$ lein test
-$ lein jar
-</pre>
-
 ## Usage
+
+You can get the jar from https://clojars.org/clj-vtd-xml. Just include this
+in your project.clj file and leiningen will get it for you:
+
+    [clj-vtd-xml "1.0.0"]
 
 For examples of how to use this library, please see the tests in
 clj-vtd-xml/test/clj_vtd_xml/test/core.clj, which are heavily commented.
